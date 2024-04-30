@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon apps.js",
+    "prod": "pm2 start apps.js",
+    "save": "pm2 save",
+    "autostartup": "pm2 startup apps.js",
+    "stop": "pm2 stop apps.js"
+  },
+  "author": "Handi",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.0"
+  }
+}
